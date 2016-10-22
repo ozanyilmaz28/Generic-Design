@@ -1,22 +1,30 @@
-﻿
+﻿@{
+    Designer.Models.ScreenModel model_ = Designer.GetScreenComponents.GetScreenProperties("TestReport");
+    int elementCount_ = model_.ScreenComponents.Count;
+}
 
 <div class="row">
     <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="x_panel">
             <div class="x_title">
-                <h2>Deneme</h2>
+                <h2>@Html.Raw(model_.ScreenName)</h2>
                 <div class="clearfix"></div>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6">
                 <form class="form-horizontal">
-                    @foreach (var item_ in Designer.GetScreenComponents.GetScreenProperties("TestReport").ScreenComponents)
+                    @foreach (var element_ in model_.ScreenComponents.Take(elementCount_ / 2))
                     {
-                        @Html.Raw(item_);
+                        @Html.Raw(element_);
                     }
                 </form>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6">
-                <form class="form-horizontal"></form>
+                <form class="form-horizontal">
+                    @foreach (var element_ in model_.ScreenComponents.Skip(elementCount_ / 2))
+                    {
+                        @Html.Raw(element_);
+                    }
+                </form>
             </div>
         </div>
     </div>
