@@ -910,6 +910,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\PlatformController.cs" />
+    <Compile Include="Controllers\ReportController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -944,6 +945,7 @@
     <Content Include="Scripts\angular-animate.min.js.map" />
     <Content Include="Views\Platform\Login.cshtml" />
     <Content Include="Views\Platform\ScreenDesign.cshtml" />
+    <Content Include="Views\Report\ReportLayout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
