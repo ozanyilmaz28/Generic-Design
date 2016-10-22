@@ -17,5 +17,10 @@ namespace GenericDesign.Controllers
         {
             return View();
         }
+
+        public ActionResult ScreenDesign()
+        {
+            return View();
+        }
     }
 }

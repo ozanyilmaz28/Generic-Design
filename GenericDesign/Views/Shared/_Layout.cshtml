@@ -18,7 +18,7 @@
             <div id="LayoutMenu" class="col-md-3 left_col">
                 <div class="left_col scroll-view">
                     <div class="navbar nav_title" style="border: 0;">
-                        <a href="#" class="site_title"><span>Deneme Menü</span></a>
+                        <a onclick="redirectPage('Platform', 'Index')" class="site_title"><span>Deneme Menü</span></a>
                     </div>
                     <div class="clearfix"></div>
                     <br />
@@ -28,7 +28,7 @@
                                 <li>
                                     <a><i class="fa fa-home"></i> Platform <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="#">Ekran Dizaynı</a></li>
+                                        <li><a onclick="redirectPage('Platform','ScreenDesign')"> Ekran Dizaynı</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -87,5 +87,13 @@
     <script src="~/Template/js/nprogress.js"></script>
     <script src="~/Template/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="~/Template/js/custom.min.js"></script>
+
+    <script type="text/javascript">
+        function redirectPage(Folder, Page) {
+            window.location.href = '/' + Folder + '/' + Page;
+        }
+
+    </script>
+
 </body>
 </html>
