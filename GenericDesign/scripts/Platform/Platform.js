@@ -1,3 +1,3 @@
-function redirectPage(Folder, Page) {
+﻿function redirectPage(Folder, Page) {
     window.location.href = '/' + Folder + '/' + Page;
 }

@@ -7,8 +7,8 @@
     <ProjectGuid>{77FEE2B0-F629-48E7-9B8C-E6337C31E14F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Designer</RootNamespace>
-    <AssemblyName>Designer</AssemblyName>
+    <RootNamespace>Ozi.Designer</RootNamespace>
+    <AssemblyName>Ozi.Designer</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ozi.DatabaseOperations">
+      <HintPath>..\Ozi.DatabaseOperations\bin\Debug\Ozi.DatabaseOperations.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Methods\GetScreenComponents.cs" />
+    <Compile Include="ScreenOperations\GetScreenComponents.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\ScreenModel.cs" />
   </ItemGroup>

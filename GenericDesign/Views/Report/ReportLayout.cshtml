@@ -1,5 +1,7 @@
-﻿@{
-    Designer.Models.ScreenModel model_ = Designer.GetScreenComponents.GetScreenProperties("TestReport");
+﻿@using GridMvc.Html
+
+@{
+    Ozi.Designer.Models.ScreenModel model_ = ScreenOperations.GetScreenComponents.GetScreenProperties("TestReport");
     int elementCount_ = model_.ScreenComponents.Count;
 }
 

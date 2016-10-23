@@ -1,1 +1,36 @@
-﻿Screen Design
+﻿@using GridMvc.Html
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <form id="ScreenSearchForm" class="form-horizontal">
+                <div class="x_title">
+                    <h2>Ekran Dizaynı</h2>
+                    <div class="nav navbar-right panel_toolbox">
+                        <button id="SearchButton" name="SearchButton" type="button" class="btn btn-success btn-md" onclick="searchScreen()">Ara</button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Ekran Tipi</label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <select id="ScreenTypeID" name="ScreenTypeID" class="form-control">
+                                <option value="0"></option>
+                                <option value="1">Rapor Ekranı</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Ekran Kodu</label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <input id="ScreenCode" name="ScreenCode" type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
